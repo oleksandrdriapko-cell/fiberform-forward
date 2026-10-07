@@ -8,3 +8,9 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Application rules
+- Keep the FiberForm homepage as a single editorial page with same-page section navigation; product-category links open the existing FiberForm catalog to preserve real inventory.
+- Store original website media as asset pointers and use their URLs in the UI, so product images remain authentic and managed.
+- Define the industrial visual system in global CSS and use Button variants for controls; this keeps the selected visual direction consistent.
+- Use Bebas Neue for Latin display text and a Cyrillic-capable condensed fallback for Ukrainian headings, because Bebas Neue does not cover Ukrainian.
