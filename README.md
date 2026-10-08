@@ -1,14 +1,21 @@
-# Welcome to your Lovable project
+# Fiberform Forward
+
+https://www.fiberform.com.ua/ я маю ось такий сайт і яхочу зробити його більш сучасним 
+як референс використай наступні сайти https://carbondigitals.com/?gad_source=1&gad_campaignid=24191885033&gbraid=0AAAABEcgYY7y6QoPFNji1rgd-QMM_kpyi&gclid=Cj0KCQjwuJLWBhD_ARIsAIBcRUxTmi_Q655zjRW2Hh7obBIBv6KIKMCqFCkhMJq-AHwPd9h3Iju7PEkaAsSiEALw_wcB
+
+https://malexcarbon.com/ 
+https://com-posit.com.ua/carbon-products
+https://carbogroup.com.ua/frez%D0%B5%D1%80uvannya-na-chpk
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/57a3bf5b-d153-4fa1-806b-4b35ad52043b).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +27,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
