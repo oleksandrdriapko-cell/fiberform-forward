@@ -110,7 +110,7 @@ h2 { font:700 44px/1.08 'Roboto Condensed',sans-serif; margin:0; text-transform:
 .page-breadcrumb [aria-current] { color:var(--foreground); }
 .editorial-cover { position:relative; min-height:470px; display:flex; align-items:center; overflow:hidden; background:var(--secondary); }
 .editorial-cover>img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.editorial-cover::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,var(--background) 0%,oklch(0.203 0.004 229 / 85%) 35%,oklch(0.203 0.004 229 / 10%) 100%); }
+.editorial-cover::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,var(--background) 0%,color-mix(in oklch,var(--background) 85%,transparent) 35%,color-mix(in oklch,var(--background) 10%,transparent) 100%); }
 .cover-copy { position:relative; z-index:1; padding:45px; max-width:650px; }
 .cover-copy h1 { font:700 82px/1 'Bebas Neue','Roboto Condensed',sans-serif; margin:0; text-transform:uppercase; }
 .cover-copy h1 span { display:block; font-size:42px; color:var(--primary); margin-top:14px; }
