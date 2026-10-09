@@ -5,3 +5,5 @@
 - [x] Design the remaining About, Products & services and Contact pages in the selected style.
 - [x] Connect pages while preserving homepage section navigation and original catalog links.
 - [x] Verify new pages, language switching and contact/catalog flows.
+- [ ] Design and verify an individual product page with authentic product information.
+- [ ] Report whether GitHub synchronization can be verified.
