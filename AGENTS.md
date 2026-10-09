@@ -17,3 +17,4 @@
 - Render shared page chrome and a session-only language context around the root Outlet, so all content pages keep consistent navigation and language without duplicating headers.
 - Give About, Products & services and Contact their own content routes; keep homepage anchors and link to full pages from its content and shared footer, so the editorial homepage and deeper pages both remain accessible.
 - Present existing product categories on the local products page and send inventory browsing to the original catalog, so no stock, prices or specifications are invented.
+- Keep individual product presentation data in a browser-safe module and render it at a dedicated dynamic route; unverified commercial details stay enquiry-only, so the design never implies invented inventory or checkout.
