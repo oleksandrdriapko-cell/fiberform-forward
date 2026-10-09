@@ -24,7 +24,7 @@ button,a,input,textarea { -webkit-tap-highlight-color:transparent; }
 .industrial-button { border-radius:0; background:var(--primary); color:var(--background); height:54px; padding:0 27px; font-size:13px; font-weight:700; box-shadow:none; }
 .industrial-button:hover { background:var(--foreground); color:var(--background); }
 .industrial-button-outline { background:transparent; color:var(--primary); border:1px solid var(--primary); height:40px; padding:0 20px; font-size:12px; }
-.industrial-button-outline:hover { background:var(--primary); }
+.industrial-button-outline:hover { background:var(--primary); color:var(--primary-foreground); }
 .header-actions { display:flex; gap:22px; align-items:center; }
 .mobile-menu-trigger { display:none; }
 .hero { position:relative; min-height:630px; display:flex; align-items:center; }
@@ -104,6 +104,7 @@ h2 { font:700 44px/1.08 'Roboto Condensed',sans-serif; margin:0; text-transform:
 
 /* Interior pages share the homepage's industrial system. */
 .nav-active,.footer-pages a:hover { color:var(--primary); }
+.about-copy>.navigation-button { margin-top:18px; }
 .footer-pages { display:flex; gap:18px; }
 .page-breadcrumb { display:flex; gap:14px; color:var(--muted-foreground); font-size:12px; padding:26px 0; flex-wrap:wrap; }
 .page-breadcrumb a:hover { color:var(--primary); }
