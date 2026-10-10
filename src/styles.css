@@ -5,7 +5,7 @@
 @theme inline {
  --color-background:var(--background); --color-foreground:var(--foreground); --color-primary:var(--primary); --color-primary-foreground:var(--primary-foreground); --color-secondary:var(--secondary); --color-secondary-foreground:var(--foreground); --color-muted:var(--secondary); --color-muted-foreground:var(--muted-foreground); --color-accent:var(--primary); --color-accent-foreground:var(--background); --color-border:var(--border); --color-input:var(--border); --color-ring:var(--primary); --color-card:var(--secondary); --color-card-foreground:var(--foreground); --color-popover:var(--secondary); --color-popover-foreground:var(--foreground); --color-destructive:var(--destructive); --font-sans:'Barlow',sans-serif; --font-display:'Bebas Neue','Roboto Condensed',sans-serif; --radius-md:4px;
 }
-:root { --background:oklch(0.967 0.003 106); --foreground:oklch(0.191 0 0); --primary:oklch(0.603 0.206 29); --primary-foreground:#fff; --secondary:#fff; --muted-foreground:oklch(0.462 0.004 106); --border:oklch(0.191 0 0 / 14%); --destructive:oklch(0.52 0.19 29); --radius:4px; --surface-light:oklch(0.942 0.004 106); --line-subtle:oklch(0.191 0 0 / 6%); --shadow-product:0 24px 36px oklch(0 0 0 / 12%); }
+:root { --background:#151718; --foreground:#E7E9E8; --primary:#C4F349; --primary-foreground:#151718; --secondary:#1B1E1F; --muted-foreground:#9BA19E; --border:rgb(231 233 232 / 14%); --destructive:oklch(0.52 0.19 29); --radius:4px; --logo-accent:#E23A2E; --surface-light:#1C1F20; --line-subtle:rgb(231 233 232 / 6%); --shadow-product:0 24px 36px rgb(0 0 0 / 45%); }
 * { border-color:var(--border); box-sizing:border-box; letter-spacing:0; }
 html { scroll-behavior:smooth; scroll-padding-top:100px; }
 body { margin:0; background:var(--background); color:var(--foreground); font-family:'Barlow',sans-serif; -webkit-font-smoothing:antialiased; }
@@ -16,7 +16,7 @@ button,a,input,textarea { -webkit-tap-highlight-color:transparent; }
 .container { width:calc(100% - 112px); max-width:1328px; margin:auto; }
 .site-header { height:105px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); position:relative; z-index:20; }
 .brand { display:flex; gap:10px; align-items:center; }
-.brand-symbol { border:2px solid var(--primary); width:42px; height:42px; display:grid; place-items:center; color:var(--primary); font:36px/1 'Bebas Neue',sans-serif; }
+.brand-symbol { border:2px solid var(--logo-accent); width:42px; height:42px; display:grid; place-items:center; color:var(--logo-accent); font:36px/1 'Bebas Neue',sans-serif; }
 .brand-words { font:23px/.85 'Bebas Neue',sans-serif; display:flex; flex-direction:column; }
 .header-links { display:flex; gap:30px; align-items:center; }
 .navigation-button { background:transparent; color:var(--muted-foreground); font-size:12px; font-weight:600; border-radius:0; padding:8px 0; height:auto; text-transform:uppercase; }
