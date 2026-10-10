@@ -11,7 +11,7 @@ describe("App routing", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
     const matches = router.matchRoutes('/product/carbon-fpv-frame');
     expect(matches.at(-1)?.routeId).toBe('/product/$slug');
-    expect(matches.at(-1)?.params.slug).toBe('carbon-fpv-frame');
+    expect(matches.at(-1)?.params).toMatchObject({ slug: 'carbon-fpv-frame' });
   });
   it.each(['/about', '/products-and-services', '/contact'])("matches the content page %s", (path) => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
