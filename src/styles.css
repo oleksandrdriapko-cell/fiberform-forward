@@ -5,7 +5,7 @@
 @theme inline {
  --color-background:var(--background); --color-foreground:var(--foreground); --color-primary:var(--primary); --color-primary-foreground:var(--primary-foreground); --color-secondary:var(--secondary); --color-secondary-foreground:var(--foreground); --color-muted:var(--secondary); --color-muted-foreground:var(--muted-foreground); --color-accent:var(--primary); --color-accent-foreground:var(--background); --color-border:var(--border); --color-input:var(--border); --color-ring:var(--primary); --color-card:var(--secondary); --color-card-foreground:var(--foreground); --color-popover:var(--secondary); --color-popover-foreground:var(--foreground); --color-destructive:var(--destructive); --font-sans:'Barlow',sans-serif; --font-display:'Bebas Neue','Roboto Condensed',sans-serif; --radius-md:4px;
 }
-:root { --background:oklch(0.203 0.004 229); --foreground:oklch(0.932 0.003 159); --primary:oklch(0.909 0.193 123); --primary-foreground:var(--background); --secondary:oklch(0.25 0.004 229); --muted-foreground:oklch(0.668 0.005 159); --border:oklch(0.932 0.003 159 / 14%); --destructive:oklch(0.65 0.2 25); --radius:4px; --surface-light:oklch(0.875 0.005 159); --line-subtle:oklch(0.932 0.003 159 / 6%); --shadow-product:0 24px 36px oklch(0 0 0 / 28%); }
+:root { --background:oklch(0.967 0.003 106); --foreground:oklch(0.191 0 0); --primary:oklch(0.603 0.206 29); --primary-foreground:#fff; --secondary:#fff; --muted-foreground:oklch(0.462 0.004 106); --border:oklch(0.191 0 0 / 14%); --destructive:oklch(0.52 0.19 29); --radius:4px; --surface-light:oklch(0.942 0.004 106); --line-subtle:oklch(0.191 0 0 / 6%); --shadow-product:0 24px 36px oklch(0 0 0 / 12%); }
 * { border-color:var(--border); box-sizing:border-box; letter-spacing:0; }
 html { scroll-behavior:smooth; scroll-padding-top:100px; }
 body { margin:0; background:var(--background); color:var(--foreground); font-family:'Barlow',sans-serif; -webkit-font-smoothing:antialiased; }
@@ -31,7 +31,7 @@ button,a,input,textarea { -webkit-tap-highlight-color:transparent; }
 .hero-art { position:absolute; width:54%; right:-12px; top:20px; bottom:5px; display:grid; place-items:center; }
 .hero-art::before,.hero-art::after { content:''; width:560px; max-width:100%; aspect-ratio:1; border:1px solid var(--line-subtle); border-radius:50%; position:absolute; }
 .hero-art::after { width:440px; border-color:var(--border); }
-.hero-art img { width:100%; height:100%; max-height:560px; object-fit:contain; position:relative; filter:brightness(1.65) drop-shadow(var(--shadow-product)); transform:rotate(-9deg); }
+.hero-art img { width:100%; height:100%; max-height:560px; object-fit:contain; position:relative; filter:drop-shadow(var(--shadow-product)); transform:rotate(-9deg); }
 .hero-copy { position:relative; z-index:2; width:58%; padding:45px 0 76px; }
 .eyebrow { font-size:10px; font-weight:700; text-transform:uppercase; display:flex; align-items:center; gap:10px; }
 .origin { display:inline-flex; background:var(--primary); color:var(--background); padding:7px 11px; margin-bottom:25px; }
@@ -63,7 +63,7 @@ h2 { font:700 44px/1.08 'Roboto Condensed',sans-serif; margin:0; text-transform:
 .catalog-card:hover img { transform:scale(1.04); }
 .catalog-visual.machining { padding:0; }
 .catalog-visual.machining img { object-fit:cover; }
-.catalog-number { position:absolute; left:13px; top:12px; font-size:10px; color:var(--background); z-index:1; }
+.catalog-number { position:absolute; left:13px; top:12px; font-size:10px; color:var(--foreground); z-index:1; }
 .catalog-info { padding:20px 17px; min-height:116px; }
 .catalog-info h3 { font:700 22px/1.1 'Roboto Condensed',sans-serif; margin:0 25px 8px 0; text-transform:uppercase; }
 .catalog-info p { color:var(--muted-foreground); margin:0; font-size:12px; line-height:1.5; }
@@ -168,13 +168,13 @@ h2 { font:700 44px/1.08 'Roboto Condensed',sans-serif; margin:0; text-transform:
 .contact-social svg { width:16px; }
 .contact-product { position:relative; background:var(--surface-light); min-height:430px; display:flex; align-items:center; justify-content:center; padding:35px; }
 .contact-product img { width:100%; height:100%; max-height:430px; object-fit:contain; }
-.contact-product>span { position:absolute; bottom:20px; left:22px; color:var(--background); font-size:10px; }
+.contact-product>span { position:absolute; bottom:20px; left:22px; color:var(--foreground); font-size:10px; }
 .enquiry-section { display:flex; justify-content:space-between; align-items:center; gap:35px; border-top:1px solid var(--border); }
 .enquiry-section>div { max-width:620px; }
 .product-detail { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:60px; padding:15px 0 65px; align-items:start; }
 .product-image-stage { position:relative; display:grid; place-items:center; background:var(--surface-light); aspect-ratio:1; padding:40px; }
 .product-image-stage img { width:100%; height:100%; object-fit:contain; }
-.product-image-stage .image-caption { position:absolute; bottom:20px; left:22px; font-size:10px; color:var(--background); }
+.product-image-stage .image-caption { position:absolute; bottom:20px; left:22px; font-size:10px; color:var(--foreground); }
 .product-image-stage .zoom-control { position:absolute; right:18px; top:18px; background:var(--background); color:var(--foreground); }
 .product-summary { padding-top:16px; min-width:0; }
 .product-summary h1 { font:700 54px/1.05 'Bebas Neue','Roboto Condensed',sans-serif; text-transform:uppercase; margin:0 0 22px; overflow-wrap:anywhere; }
